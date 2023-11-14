@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+   <meta charset='UTF-8'>
+   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+   <title></title>
+   <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="logo-container">
+      <img src="./../static/Screenshot 2023-04-01 at 5.55.png" alt="iitjlogo">
+      <img src="./../static/2.png" alt="bsbelogo">
+    </div>
+    <img src="./../static/menu.png" id="menu-icon">
+    <div class="nav-btn-container">
+      <a href="https://summerpun2803.github.io/lab1/"> <button class="nav-btn"> Lab 2 </button></a>
+      <a href="https://summerpun2803.github.io/lab2/"> <button class="nav-btn"> Lab 1 </button></a>
+      <a href="./../index.html"> <button class="nav-btn"> Home </button></a>
+      <a href="#"> <button class="nav-btn active"> Theory </button></a>
+      <a href="./../procedure/index.html"> <button class="nav-btn"> Procedure </button></a>
+      <a href="./../simulation/index.html"> <button class="nav-btn"> Simulation </button></a>
+      <!-- <a href="./../ref/index.html"> <button class="nav-btn"> Reference </button></a>
+      <a href="./../exercise/index.html"> <button class="nav-btn"> Exercise </button></a> -->
+    </div>
+  </nav>
+
+  <div class="res-menu">
+    <img src="./../static/close.png" alt="close" id="close-btn">
+    <ul>
+      <li><a href="https://summerpun2803.github.io/lab1/"> <button> Lab 2</button></a></li>
+      <li><a href="https://summerpun2803.github.io/lab2/"> <button> Lab 1 </button></a></li>
+      <li><a href="./../index.html"> <button> Home </button></a></li>
+      <li><a href="./../theory/index.html"> <button> Theory </button></a></li>
+      <li><a href="./../procedure/index.html"> <button> Procedure </button></a></li>
+      <li><a href="./../simulation/index.html"> <button> Simulation </button></a></li>
+      <!-- <li><a href="./../ref/index.html"> <button> Reference </button></a></li>
+      <li><a href="./../exercise/index.html"> <button> Exercise </button></a></li> -->
+
+    </ul>
+  </div>
+
+
+  <section class="objective">
+    <div class="text-container">
+      <div class="lb" style="font-size: 25px; font-weight: 700;">What is protein structure modeling ?</div>
+      <div class="content">The technique of predicting or building three-dimensional models of protein structures based on the amino acid sequences of those structures is referred to as protein structure modeling.
+      </div>
+    </div>
+  </section>
+  
+  <section class="theory">
+    <div class="text-container">
+      <div class="lb" style="font-size: 25px; font-weight: 700;">What are the different methods ?</div>
+      <div class="content">Modeling the three-dimensional structure of proteins often takes one of two primary approaches:
+
+        Modeling the three-dimensional structure of proteins often takes one of two primary approaches:
+        Homology Modelling, also known as Comparative Modeling, is a technique that is based on the hypothesis that protein sequences that are very similar also have very similar three-dimensional structures. If the structure of a homologous (structurally comparable) protein is known, then the structure of the target protein can be modeled based on this template using the information from the homologous protein. When there is a significant degree of sequence similarity between the target protein and a protein whose structure is already known, homology modeling is a very useful technique.
+        Ab Initio Modelling, often known as "De Novo" Modelling, is a technique that involves the prediction of protein structures from the ground up, without making use of any knowledge gleaned from previously discovered homologous structures. The ab initio modeling approach is more difficult because it entails anticipating the intricate folding patterns of proteins. These patterns are affected by a variety of factors, including energetics and the interactions between molecules.
+        
+      </div>
+    </div>
+    <img src="./../static/requested_image 1.png" alt="protein-img">
+  </section>
+  
+  <section class="functions">
+    <div class="text-container">
+      <div class="lb" style="font-size: 25px; font-weight: 700;">List of common approaches used for the validation of protein structural models</div>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <h3> The RMSD</h3><br> 
+        The root mean square deviation, or RMSD, is a measurement that determines the average distance between atoms in a modeled structure and their corresponding atoms in an experimentally determined structure, often known as a reference structure. A smaller number for RMSD suggests that the model and the reference structure are more closely aligned with one another.
+
+      </div>
+      <div class="card">
+        <h3>MolProbity Score</h3><br> 
+        MolProbity is a programme that evaluates the quality of protein structures based on a variety of factors, such as steric clashes, bond lengths, bond angles, and other geometric properties. The results of this evaluation are displayed graphically. A higher level of model quality is indicated by lower MolProbity scores
+      </div>
+      <div class="card">
+        <h3>Ramachandran Plot</h3><br> 
+        A graphical representation of the dihedral angles of the polypeptide backbone of a protein is called a Ramachandran plot. It is useful in determining which parts of the protein structure fall within the authorized regions and which parts fall outside of them. The Ramachandran plot should have a high number of residues in favorable regions, as this is a sign of a good model.
+
+      </div>
+      <div class="card">
+        <h3> Verify3D Score</h3><br> 
+        Verify3D performs an analysis to determine whether or not the modeled structure is compatible with its own amino acid sequence. It evaluates if the model's structure is consistent with known protein structures by computing a score based on the 3D-1D profile and calculating the degree to which it is consistent.
+
+      </div>
+      <div class="card">
+        <h3>Protein Structure Analysis</h3><br> 
+        The energy of a protein structure is evaluated with the help of a tool called ProSA, which looks for any mistakes or deviations in the structure. It offers a Z-score, and generally speaking, higher Z-scores suggest a higher quality model.
+
+      </div>
+      
+    </div>
+  <!-- </section>
+  
+  <section class="structure">
+    <img src="./../static/image 1.png" alt="protein-img">
+    <div class="text-container">
+      <div class="lb" style="font-size: 25px; font-weight: 700;">Protein Structure</div>
+      <div class="content" style="margin-top: 2vh;">Protein structure is the three-dimensional arrangement of atoms in an amino acid-chain molecule. The function of a protein is highly dependent on its 3D structure. The amino acid sequence of a polypeptide chain determines the final 3D structure of the protein. There are four levels of protein structure; the primary structure, the secondary structure, the tertiary structure, and the quaternary structure. Furthermore, there are two main classes of 3D protein structures; these are globular and fibrous proteins. Complex, 3D proteins are produced by folding of the simple primary and secondary protein structures.
+      </div>
+    </div>
+  </section>
+  
+  <section class="alignment">
+    <div class="text-container">
+      <div class="lb" style="font-size: 25px; font-weight: 700;">What is Structure Alignment ?</div>
+      <div class="content" style="margin-top: 2vh;">Structure alignment attempts to establish residue-residue correspondence between two or more macromolecular structures based on the optimal superposition of their shape and three-dimensional conformation. Structure alignment requires no prior knowledge of equivalent pairs of residues, does not rely on the sequence alignment, and the type of residues is ignored when the correspondence is established. This tool presents options for pair wise structure alignment of proteins. In the case of pair wise alignment, structures are always compared in pairs.
+      </div>
+    </div>
+    <img src="./../static/Alignment_of_thioredoxins2 1.png" alt="protein-img">
+  </section>
+  
+  <section style="padding-bottom: 10vh;">
+    <div class="text-container">
+      <div class="lb" style="font-size: 25px; font-weight: 700;">When is Structure Alignment useful?</div>
+      <div class="content" style="margin-top: 2vh;">Structure alignment is a valuable tool for the comparison of proteins with low structure similarity, where evolutionary relationships between proteins cannot be easily detected by standard structure alignment techniques. Pair wise protein structure comparison can be used for analysis of conformational changes on ligand binding, analysis of structural variation between proteins within an evolutionary family, and identification of common structural domains. <br>
+      There are many ways by which you can perform Protein Structure Alignment like MM align, TM align, Dali, Kpax, etc. Each of them use different algorithms to align the structures and some are constrained to particular type of structures like TM align only compare the tertiary proteins. So based on your type of structural proteins you can use these tools mentioned above.
+      </div>
+    </div>
+  </section> -->
+
+
+  <script src="./../index.js"></script>
+
+</body>
+</html>
